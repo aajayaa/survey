@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div>
+      <h1 id="title">Welcome to the Anime Forum</h1>
+      <p id="description">Thank you for your valuable time..</p>
+    </div>
+
+    <form action="wiki.com" id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" placeholder="Your Name" required />
+      <label for="address">Address</label>
+      <input
+        type="text"
+        id="address"
+        name="address"
+        placeholder="Enter Your Home"
+        required
+      />
+      <label for="number" id="number-label">Phone Number</label>
+      <input
+        type="tel"
+        id="number"
+        name="contact"
+        placeholder="Your Phone Number"
+        required
+        type="number"
+        min="0"
+        max="9"
+      />
+      <label for="email" id="email-label">E-mail</label>
+      <input type="email" id="email" placeholder="Type Email" required />
+      <label for="dropdown">What describes you best?</label>
+      <select name="dropdown" id="dropdown">
+        <option value="Select current Role">Select current Role</option>
+        <option value="Student">Student</option>
+        <option value="Employee">Employee</option>
+        <option value="Nalla">Nalla</option>
+        <option value="Hustler">Hustler</option>
+      </select>
+      <label for="anime">Do you love anime??</label>
+
+      <label for="yes">Yes</label>
+      <input type="radio" id="yes" name="anime" />
+
+      <label for="maybe">Maybe</label>
+      <input type="radio" id="maybe" name="anime" />
+
+      <label for="no">NO</label>
+      <input type="radio" id="no" name="anime" />
+      <label for="vote">Which is your favorite anime?</label>
+      <select name="anime-drop" id="anime-drop">
+        <option value="Choose One">Choose One</option>
+        <option value="Naruto">Naruto</option>
+        <option value="One-Piece">One-Piece</option>
+        <option value="Jujutsu Kaisen">Jujutsu Kaisen</option>
+        <option value="Tokyo Revengers">Tokyo Revengers</option>
+      </select>
+      <label
+        >Which one is your Favourite Characters??(Check all that applly)</label
+      >
+      <label for="naruto">Naruto</label>
+      <input type="checkbox" id="naruto" />
+      <label for="mikey">Mikey</label>
+      <input type="checkbox" id="mikey" />
+      <label for="Luffy">Luffy</label>
+      <input type="checkbox" id="Luffy" />
+      <label for="gojo">Gojo Satoru</label>
+      <input type="checkbox" id="gojo" />
+      <label for="textarea">Your valuable words here</label>
+      <textarea
+        id="textarea"
+        rows="5"
+        cols="20"
+        class="textarea"
+        maxlength="500"
+        wrap="hard"
+        placeholder="Your Comments"
+      ></textarea>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
